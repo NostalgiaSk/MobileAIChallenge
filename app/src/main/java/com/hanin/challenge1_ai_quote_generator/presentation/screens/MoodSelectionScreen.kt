@@ -1,0 +1,8 @@
+package com.hanin.challenge1_ai_quote_generator.presentation.screens
+
+import androidx.compose.runtime.Composable
+
+@Composable
+fun MoodSelectionScreen(){
+
+}

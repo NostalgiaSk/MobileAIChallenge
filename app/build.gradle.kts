@@ -66,4 +66,11 @@ dependencies {
     androidTestImplementation("androidx.compose.ui:ui-test-junit4")
     debugImplementation("androidx.compose.ui:ui-tooling")
     debugImplementation("androidx.compose.ui:ui-test-manifest")
+
+    //navigation
+    implementation ("androidx.hilt:hilt-navigation-compose:1.0.0-alpha03")
+    implementation ("androidx.navigation:navigation-compose:2.4.0-alpha04")
+
+    //Preferences DataStore
+    implementation ("androidx.datastore:datastore-preferences:1.0.0-alpha05")
 }
