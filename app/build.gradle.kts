@@ -1,11 +1,12 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
+    id("org.jetbrains.kotlin.plugin.compose") // <-- Add this line
 }
 
 android {
     namespace = "com.hanin.challenge1_ai_quote_generator"
-    compileSdk = 33
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.hanin.challenge1_ai_quote_generator"
@@ -72,5 +73,12 @@ dependencies {
     implementation ("androidx.navigation:navigation-compose:2.4.0-alpha04")
 
     //Preferences DataStore
-    implementation ("androidx.datastore:datastore-preferences:1.0.0-alpha05")
+    implementation ("androidx.datastore:datastore-preferences:1.1.0-alpha05")
+
+    //lottie files
+    implementation ("com.airbnb.android:lottie-compose:6.1.0")
+
+    //Kotlin coroutines
+    implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.3")
+    implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
 }
